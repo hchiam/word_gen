@@ -1,5 +1,7 @@
 # Markov Word Generator
 
+https://hchiam.blogspot.ca/2017/07/make-your-own-word-inventor.html
+
 The original inspiration for this project:
 
 Original video (en français): https://www.youtube.com/watch?v=YsR7r2378j0
