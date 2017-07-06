@@ -3,11 +3,9 @@
 
 from __future__ import print_function
 
-import click
 import numpy as np
 from numpy.random import choice, seed
-import codecs
-# import os
+import codecs # so can use special characters
 
 import sys
 PY3 = (sys.version_info[0] >= 3)
@@ -15,14 +13,11 @@ PY3 = (sys.version_info[0] >= 3)
 if PY3:
     unichr = chr
 
-def process(lang, codec, random_seed=True):
+def process(codec, random_seed=True):
     if random_seed:
         seed(None)
     else:
         seed(1)
-    # filepath = os.path.join("words", "%s.txt" % lang)
-    # outfile = os.path.join("outputs", "%s.txt" % lang)
-    # probafile = os.path.join("counts", "%s.bin" % lang)
     filepath = 'input.txt'
     outfile = 'output.txt'
     probafile = 'counts.bin'
@@ -39,11 +34,10 @@ def process(lang, codec, random_seed=True):
     p = count.astype('float') / st
     p[np.isnan(p)] = 0
 
-    #%%
     with codecs.open(outfile, "w", codec) as f:
-        outputexamples = 30
+        outputexamples = 30 # originally: 100
         maxwordlength = 10
-        for TGT in range(maxwordlength,maxwordlength+1): # for TGT in range(12,13):
+        for TGT in range(maxwordlength,maxwordlength+1): # originally: for TGT in range(12,13):
             total = 0
             while total < outputexamples:
                 i = 0
@@ -63,15 +57,11 @@ def process(lang, codec, random_seed=True):
                     print(x)
                     f.write(x + "\n")
 
-@click.command()
-@click.option('--random-seed/--no-random-seed', default=True)
-@click.option('--lang', default="FR", help='Language')
-@click.option('--codec', default="ISO-8859-1", help='Codec')
-def main(lang, codec, random_seed):
+def main(codec='ISO-8859-1', random_seed=True):
     if random_seed:
         print("Using a truly random seed")
         print("Use --no-random-seed to get reproducible results")
-    process(lang, codec, random_seed=random_seed)
+    process(codec, random_seed=random_seed)
 
 if __name__ == '__main__':
     main()
