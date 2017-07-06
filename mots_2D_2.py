@@ -39,8 +39,8 @@ def process(lang, codec, random_seed=True):
     #%%
     with codecs.open(outfile, "w", codec) as f:
         K = 100
-        wordlength = 10
-        for TGT in range(wordlength,wordlength+1): # for TGT in range(12,13):
+        maxwordlength = 10
+        for TGT in range(maxwordlength,maxwordlength+1): # for TGT in range(12,13):
 
         #K = 100
         #for TGT in range(4,11):
