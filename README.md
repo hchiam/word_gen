@@ -10,17 +10,15 @@ Original code: https://sciencetonnante.wordpress.com/2015/10/16/la-machine-a-inv
 
 Install Python2 or Python3 with `numpy` and `click`.
 
-Then run: `python mots_2D.py`
+Then run:
 
-And then: `python mots_2D_2.py`
+`python mots_2D.py && python mots_2D_2.py`
 
-Result will be in outputs/FR.txt by default.
+(The `&&` runs the second command only if the first command works.)
+
+Input data file: `words/FR.txt`.
+
+Output data file: `outputs/FR.txt`. See your generated words here! :)
 
 You can choose the language with ``--lang`` and the encoding with
 ``--codec``
-
-## Notes
-
-The input data file: `words/FR.txt`
-
-The output data file: `outputs/FR.txt`
