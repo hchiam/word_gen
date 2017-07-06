@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
+
 import numpy as np
 import re
 import codecs
@@ -10,6 +12,8 @@ def lang_count():
 
     count = np.zeros((256,256,256), dtype='int32')
     res = []
+
+    print('...Please wait a bit while I process the data in ' + str(filepath) + '...')
 
     with codecs.open(filepath, "r", "ISO-8859-1") as lines:
         for l in  lines:
