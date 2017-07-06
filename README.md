@@ -1,22 +1,19 @@
-# word_gen
+# Markov Word Generator
 
-See here for the inspiration for this project
-(in French)
+See here for the original inspiration for this project:
 
-https://sciencetonnante.wordpress.com/
+Original video (en français): https://www.youtube.com/watch?v=YsR7r2378j0
 
-https://www.youtube.com/watch?v=YsR7r2378j0
-
-We just took the code he gave and mad it a bit more usable
+Original code: https://sciencetonnante.wordpress.com/2015/10/16/la-machine-a-inventer-des-mots-video/
 
 ## Usage
 
-Install Python2 or Python3 with numpy and click.
+Install Python2 or Python3 with `numpy` and `click`.
 
 Then run:
 
 ```
-  python mots_2D.py && python mots_2D_2.py
+python mots_2D.py && python mots_2D_2.py
 ```
 
 Result will be in outputs/FR.txt by default.
