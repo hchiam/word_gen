@@ -24,7 +24,7 @@ def process(codec, random_seed):
 
     dico = []
     with codecs.open(filepath, "r", "ISO-8859-1") as lines:
-        for l in  lines:
+        for l in lines:
             dico.append(l[:-1])
 
     count = np.fromfile(probafile, dtype="int32").reshape(256,256,256)

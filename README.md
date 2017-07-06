@@ -12,7 +12,7 @@ Install Python2 or Python3 with `numpy` and `click`.
 
 Then run this command (you'll have to wait a little):
 
-`python mots_2D.py && python mots_2D_2.py`
+`python make_map.py && python create_words.py`
 
 (The `&&` runs the second command only if the first command works.)
 
