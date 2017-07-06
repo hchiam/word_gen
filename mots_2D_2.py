@@ -13,7 +13,7 @@ PY3 = (sys.version_info[0] >= 3)
 if PY3:
     unichr = chr
 
-def process(codec, random_seed=True):
+def process(codec, random_seed):
     if random_seed:
         seed(None)
     else:
