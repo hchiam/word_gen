@@ -18,3 +18,9 @@ Result will be in outputs/FR.txt by default.
 
 You can choose the language with ``--lang`` and the encoding with
 ``--codec``
+
+## Notes
+
+The input data file: `words/FR.txt`
+
+The output data file: `outputs/FR.txt`
