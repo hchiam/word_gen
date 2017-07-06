@@ -2,13 +2,14 @@
 # -*- coding: utf-8 -*-
 
 import click
-import os
+# import os
 import numpy as np
 import re
 import codecs
 
 def lang_count(lang):
-    filepath = os.path.join("words", "%s.txt" % lang)
+    # filepath = os.path.join("words", "%s.txt" % lang)
+    filepath = 'input.txt'
 
     count = np.zeros((256,256,256), dtype='int32')
     res = []
@@ -30,7 +31,8 @@ def lang_count(lang):
 @click.option('--lang', default="FR", help='Language')
 def main(lang):
     count = lang_count(lang)
-    count.tofile(os.path.join("counts", "%s.bin" % lang))
+    # count.tofile(os.path.join("counts", "%s.bin" % lang))
+    count.tofile('counts.bin')
 
 if __name__ == '__main__':
     main()

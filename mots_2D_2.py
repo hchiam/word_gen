@@ -7,7 +7,7 @@ import click
 import numpy as np
 from numpy.random import choice, seed
 import codecs
-import os
+# import os
 
 import sys
 PY3 = (sys.version_info[0] >= 3)
@@ -20,9 +20,12 @@ def process(lang, codec, random_seed=True):
         seed(None)
     else:
         seed(1)
-    filepath = os.path.join("words", "%s.txt" % lang)
-    outfile = os.path.join("outputs", "%s.txt" % lang)
-    probafile = os.path.join("counts", "%s.bin" % lang)
+    # filepath = os.path.join("words", "%s.txt" % lang)
+    # outfile = os.path.join("outputs", "%s.txt" % lang)
+    # probafile = os.path.join("counts", "%s.bin" % lang)
+    filepath = 'input.txt'
+    outfile = 'output.txt'
+    probafile = 'counts.bin'
 
     dico = []
     with codecs.open(filepath, "r", "ISO-8859-1") as lines:
