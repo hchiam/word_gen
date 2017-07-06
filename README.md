@@ -16,9 +16,9 @@ Then run this command (you'll have to wait a little):
 
 (The `&&` runs the second command only if the first command works.)
 
-Input data file: `words/FR.txt`. Have at least about 30 words here to get it working, but maybe over a thousand to get more robust/realistic results.
+Input data file: `input.txt`. Put at least about 30 words here to have the algorithm working, but maybe over a thousand to get more robust/realistic results.
 
-Output data file: `outputs/FR.txt`. See your generated words here! :)
+Output data file: `output.txt`. See your generated words here! :)
 
 (You can re-run `python mots_2D_2.py` multiple times if you didn't reset the input words.)
 
