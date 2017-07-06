@@ -20,7 +20,7 @@ Input data file: `input.txt`. Put at least about 30 words here to have the algor
 
 Output data file: `output.txt`. See your generated words here! :)
 
-(You can re-run `python mots_2D_2.py` multiple times if you didn't reset the input words.)
+(You can re-run `python create_words.py` multiple times if you didn't reset the input words.)
 
 You can choose the language with ``--lang`` and the encoding with
 ``--codec``
